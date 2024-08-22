@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    border: solid 3px green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor-3 {
+    border: solid 3px purple;
+    text-align: right;
+    margin-top: 7px; 
+}
+
+#contenedor-3 {
+    border: solid 5px orange;
+}
+
+div[class$="boton"] {
+    border-style: dashed;
+    border-color: rgb(128, 0, 100);
+}
+
+.contenedor-2 {
+    border: solid 3px blue;
+    text-align: right;
+    margin-top: 7px; 
+}
+
+p {
+    border: solid 5px red;
+}
+
+
+
+
