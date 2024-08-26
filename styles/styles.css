@@ -7,6 +7,7 @@
     font-weight: 400;
     font-style: normal;
     color: #000000;
+    box-sizing: content-box;
 }
 
 .contenedor-nav-logo {
@@ -14,7 +15,7 @@
     height: 10vh;
     display: flex;
     flex-direction: row;
-    border-bottom: solid 5px black;
+    border-bottom: solid 5px #3627F6;
 }
 
 .contenedor-logo {
@@ -23,11 +24,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #3627F6;
 }
 
 #logo-header {
-    height: 90%;
+    height: 85%;
     /* border: solid 5px purple; */
 }
 
@@ -51,10 +52,61 @@ nav {
     justify-content: space-around;
 }
 
+.contenedor-seccion {
+    height: 89vh;
+    /* border: solid 5px green; */
 
+}
 
+.contenedor-titulo {
+    /* border: solid 6px pink; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
 
+h1 {
+    color: #FFFFFF;
+}
 
+.contenedor-seccion-n1 {
+    /* border: solid 5px purple; */
+    height: 80%;
+    display: flex;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/455/979/716/chip-computer-internet-tecnologia-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 
+div[class^="contenedor-seccion-n1-n"] {
+    /* border: solid 4px yellow; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-seccion1 {
+    width: 50%;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    opacity: .8;
+}
+
+.boton {
+    font-size: 2rem;
+    border-style: none;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #3627F6;
+    opacity: .8;
+    color: #FFFFFF;
+}
 
