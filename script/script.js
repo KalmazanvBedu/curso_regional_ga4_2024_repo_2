@@ -70,9 +70,33 @@ if(edad >= 18) {
 
 const boton = document.getElementById("boton");
 
-boton.addEventListener("click", () => {
-    gtag('event', 'clic_contacto');
-});
+// boton.addEventListener("click", () => {
+//     gtag('event', 'clic_contacto');
+// });
+
+const opcion_menu1 = document.getElementById("opcion-menu-1");
+
+opcion_menu1.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_1');
+}) 
+
+const opcion_menu2 = document.getElementById("opcion-menu-2");
+
+opcion_menu2.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_2');
+}) 
+
+const opcion_menu3 = document.getElementById("opcion-menu-3");
+
+opcion_menu3.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_3');
+}) 
+
+const opcion_menu4 = document.getElementById("opcion-menu-4");
+
+opcion_menu4.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_4');
+}) 
 
 
 
