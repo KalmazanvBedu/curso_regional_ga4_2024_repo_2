@@ -68,6 +68,11 @@ if(edad >= 18) {
     console.log("No puedes pasar el primer filtro");
 }
 
+const boton = document.getElementById("boton");
+
+boton.addEventListener("click", () => {
+    gtag('event', 'clic_contacto');
+});
 
 
 
