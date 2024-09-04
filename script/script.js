@@ -68,6 +68,7 @@ if(edad >= 18) {
     console.log("No puedes pasar el primer filtro");
 }
 
+const boton = document.getElementById{"boton"}
 
 
 
