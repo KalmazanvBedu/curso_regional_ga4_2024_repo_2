@@ -121,4 +121,41 @@ div[class^="contenedor-seccion-n1-n"] {
     opacity: .8;
     color: #FFFFFF;
 }
+.contenedor-cursos {
+    width: 80%;
+    height: 90%;
+    background-color: black;
+    opacity: .8;
+    border-radius: 10px;
+}
+.fila-cursos {
+    /* border: solid 5px orangered; */
+    height: 16%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 
+}
+.logo-curso {
+    /* height: 7rem; */
+    padding: 10px;
+    width: 10%;
+
+}
+.descripcion-curso {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 60%;
+
+}
+.boton-curso {
+    background-color: #3627F6;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    height: 70%;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+}
