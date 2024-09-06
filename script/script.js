@@ -96,8 +96,47 @@ const opcion_menu4 = document.getElementById("opcion-menu-4");
 
 opcion_menu4.addEventListener("click", function() {
     gtag('event', 'clic_opcion_menu_4');
-}) 
+})
 
+//********** Funciones JS*********
+
+//Función sin parámetros
+
+function suma() {
+    const numeroUno = 10;
+    const numeroDos = 8;
+    const resultado = numeroUno + numeroDos;
+    const mensaje = "La suma de " + numeroUno + " + " + numeroDos + " = " +  resultado;
+    return mensaje;
+}
+
+var operacion = suma();
+
+console.log(operacion);
+
+//Función con parámetros
+
+function sumaDos(numeroUnoParametro, numeroDosParametro) {
+    const numeroUno = numeroUnoParametro;
+    const numeroDos = numeroDosParametro;
+    const resultado = numeroUno + numeroDos;
+    const mensaje = "La suma de " + numeroUno + " + " + numeroDos + " = " +  resultado;
+    return mensaje;
+}
+
+console.log(sumaDos(20, 4));
+
+console.log(sumaDos(5, 2));
+
+function resta(numeroUnoParametro, numeroDosParametro) {
+    const numeroUno = numeroUnoParametro;
+    const numeroDos = numeroDosParametro;
+    const resultado = numeroUno - numeroDos;
+    const mensaje = "La resta de " + numeroUno + " - " + numeroDos + " = " +  resultado;
+    return mensaje;
+}
+
+console.log(resta(15, 7));
 
 
 
