@@ -77,12 +77,13 @@ nav {
 
 .espacio-superior{
     height: 10%;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 h1 {
     color: #000000;
     font-weight: bold;
+    text-align: center;
 }
 
 .contenedor-seccion-n1 {
@@ -144,6 +145,7 @@ div[class^="contenedor-seccion-n1-n"] {
     flex-direction: column;
     justify-content: space-around;
 }
+
 .fila-cursos {
     /* border: solid 5px orangered; */
     height: 16%;
@@ -152,12 +154,14 @@ div[class^="contenedor-seccion-n1-n"] {
     justify-content: space-around;
     align-items: center;
 }
+
 .logo-curso {
     /* height: 7rem; */
     padding: 10px;
     width: 10%;
 
 }
+
 .descripcion-curso {
     font-size: 1.2rem;
     color: #FFFFFF;
@@ -165,6 +169,7 @@ div[class^="contenedor-seccion-n1-n"] {
     width: 55%;
 
 }
+
 .boton-curso {
     background-color: #fb976f;
     color: #FFFFFF;
@@ -175,4 +180,191 @@ div[class^="contenedor-seccion-n1-n"] {
     padding: 10px;
     width: 35%;
     margin: 10px;
+}
+
+@media screen and (max-width: 501px) {
+    
+    .main-nav {
+        /* border: solid 5px green; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+    }
+
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .button-menu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #fb976f;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+      }
+
+      .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+      }
+      
+      .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+      }
+      
+      .button-menu.close span:nth-child(3) {
+        display: none;
+      }
+
+        .main-nav.show {
+        margin-left: 0;
+        }
+
+        .button-menu.hide{
+        display: none;
+        }
+
+        .button-menu.show{
+        display: block;
+        }
+
+          .nav-links {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+            align-items: start;
+            justify-content: space-around;
+            z-index: 102;
+            /* border: solid 5px green; */
+          }
+
+          .link-item {
+            margin-left: 1rem;
+            margin-top: 2rem;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            z-index: 103;
+            /* border: solid 5px red; */
+          }
+          
+          .link-item::after {
+            position: absolute;
+            content: "";
+            background-color: black;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            transition: 0.3s ease all;
+          }
+
+          .link-item:hover::after {
+            width: 100%;
+          }
+
+    .contenedor-seccion-n1 {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #seccion-dos div[class="contenedor-seccion-n1"] {
+        flex-direction: column-reverse;
+    }
+
+    .contenedor-titulo {
+    /* border: solid 6px pink; */
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-logo {
+        /* border: solid 5px green; */
+        width: 40%;
+    }
+
+    #logo-header {
+        height: 80%;
+    }
+
+    .contenedor-nav {
+        /* border: solid 5px green; */
+        width: 60%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .espacio-superior{
+        height: 10%;
+        background-color: #ffffff;
+        /* border: solid 5px red; */
+    }
+
+    h1 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    div[class="contenedor-seccion-n1-n1"] {
+        height: 70%;
+        width: 100%;
+    }
+
+    div[class="contenedor-seccion-n1-n2"] {
+        height: 30%;
+        width: 100%;
+    }
+
+    .parrafo-seccion1 {
+        height: 75%;
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .descripcion-curso {
+        font-size: .7rem;
+        color: #FFFFFF;
+        padding: 20px;
+        width: 50%;
+    
+    }
+
+    .boton-curso {
+        font-size: .7rem;
+        height: 40%;
+        padding: 10px;
+        width: 40%;
+        margin: 10px;
+    }
+
+    
+
 }

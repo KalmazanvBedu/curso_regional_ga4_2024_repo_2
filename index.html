@@ -41,14 +41,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img id="logo-header" src="images/Logos/Logo sitio final dos.png" alt="">
         </div>
         <div class="contenedor-nav">
-            <nav>
-                <ol class="contenor-item">
-                    <li class="opcion-menu opcion-menu-1"><a id="opcion-menu-1" href="#seccion-uno">Nosotros</a></li>
-                    <li class="opcion-menu opcion-menu-2"><a id="opcion-menu-2" href="#seccion-dos">Nuestros cursos</a></li>
-                    <li class="opcion-menu opcion-menu-3"><a id="opcion-menu-3" href="">Por qué aprender con nosotros</a></li>
-                    <li class="opcion-menu opcion-menu-4"><a id="opcion-menu-4" href="">Contacto</a></li>
+            <nav id="nav" class="main-nav">
+                <ol class="contenor-item nav-links">
+                    <li class="opcion-menu opcion-menu-1"><a id="opcion-menu-1" class="link-item" href="#seccion-uno">Nosotros</a></li>
+                    <li class="opcion-menu opcion-menu-2"><a id="opcion-menu-2" class="link-item" href="#seccion-dos">Nuestros cursos</a></li>
+                    <li class="opcion-menu opcion-menu-3"><a id="opcion-menu-3" class="link-item" href="">Por qué aprender con nosotros</a></li>
+                    <li class="opcion-menu opcion-menu-4"><a id="opcion-menu-4" class="link-item" href="">Contacto</a></li>
                 </ol>
             </nav>
+            <button id="button-menu" class="button-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -123,6 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 <script src="script/script.js"></script>
+<script src="script/menuHamburguesa.js"></script>
 
 <script>
     
