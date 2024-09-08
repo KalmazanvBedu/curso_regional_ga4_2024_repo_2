@@ -96,9 +96,9 @@ const boton = document.getElementById("boton");
 
 // const opcion_menu4 = document.getElementById("opcion-menu-4");
 
-opcion_menu4.addEventListener("click", function() {
-    gtag('event', 'clic_opcion_menu_4');
-}) 
+// opcion_menu_4.addEventListener("click", function() {
+//     gtag('event', 'clic_opcion_menu_4');
+// }) 
 
 //********** Funciones JS*********
 

@@ -26,4 +26,61 @@ navWrapper.addEventListener("click", e => {
   }
 });
 
+const opcion_menu_1 = document.getElementById("opcion-menu-1");
+const opcion_menu_2 = document.getElementById("opcion-menu-2");
+const opcion_menu_3 = document.getElementById("opcion-menu-3");
+const opcion_menu_4 = document.getElementById("opcion-menu-4");
+
+opcion_menu_1.addEventListener("click", () => {
+    let clasesNavWrapper = navWrapper.classList;
+    let cantidadClasesNavWrapper = clasesNavWrapper.length;
+
+    for(let i = 0; i < cantidadClasesNavWrapper; i++) {
+        if(clasesNavWrapper[i] === "show") {
+            navWrapper.classList.remove("show");
+            toggleButton.classList.remove("close");
+        } 
+    }
+
+});
+
+opcion_menu_2.addEventListener("click", () => {
+    let clasesNavWrapper = navWrapper.classList;
+    let cantidadClasesNavWrapper = clasesNavWrapper.length;
+
+    for(let i = 0; i < cantidadClasesNavWrapper; i++) {
+        if(clasesNavWrapper[i] === "show") {
+            navWrapper.classList.remove("show");
+            toggleButton.classList.remove("close");
+        } 
+    }
+
+});
+
+opcion_menu_3.addEventListener("click", () => {
+    let clasesNavWrapper = navWrapper.classList;
+    let cantidadClasesNavWrapper = clasesNavWrapper.length;
+
+    for(let i = 0; i < cantidadClasesNavWrapper; i++) {
+        if(clasesNavWrapper[i] === "show") {
+            navWrapper.classList.remove("show");
+            toggleButton.classList.remove("close");
+        } 
+    }
+
+});
+
+opcion_menu_4.addEventListener("click", () => {
+    let clasesNavWrapper = navWrapper.classList;
+    let cantidadClasesNavWrapper = clasesNavWrapper.length;
+
+    for(let i = 0; i < cantidadClasesNavWrapper; i++) {
+        if(clasesNavWrapper[i] === "show") {
+            navWrapper.classList.remove("show");
+            toggleButton.classList.remove("close");
+        } 
+    }
+
+});
+
 

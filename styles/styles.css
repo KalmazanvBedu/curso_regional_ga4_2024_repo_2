@@ -293,6 +293,16 @@ div[class^="contenedor-seccion-n1-n"] {
         align-items: center;
     }
 
+    div[class="contenedor-seccion-n1-n2"] {
+        /* border: solid 5px red; */
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .boton {
+        margin-top: 15px;
+    }
+
     #seccion-dos div[class="contenedor-seccion-n1"] {
         flex-direction: column-reverse;
     }
