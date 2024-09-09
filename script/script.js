@@ -76,29 +76,46 @@ const boton = document.getElementById("boton");
 
 //**********Medición de eventos con GTag**********
 
-// const opcion_menu1 = document.getElementById("opcion-menu-1");
+const opcion_menu1 = document.getElementById("opcion-menu-1");
 
-// opcion_menu1.addEventListener("click", function() {
-//     gtag('event', 'clic_opcion_menu_1');
-// }) 
+opcion_menu1.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_1');
+}) 
 
-// const opcion_menu2 = document.getElementById("opcion-menu-2");
+const opcion_menu2 = document.getElementById("opcion-menu-2");
 
-// opcion_menu2.addEventListener("click", function() {
-//     gtag('event', 'clic_opcion_menu_2');
-// }) 
+opcion_menu2.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_2');
+}) 
 
-// const opcion_menu3 = document.getElementById("opcion-menu-3");
+const opcion_menu3 = document.getElementById("opcion-menu-3");
 
-// opcion_menu3.addEventListener("click", function() {
-//     gtag('event', 'clic_opcion_menu_3');
-// }) 
+opcion_menu3.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_3');
+}) 
 
-// const opcion_menu4 = document.getElementById("opcion-menu-4");
+const opcion_menu_4 = document.getElementById("opcion-menu-4");
 
-// opcion_menu_4.addEventListener("click", function() {
-//     gtag('event', 'clic_opcion_menu_4');
-// }) 
+opcion_menu_4.addEventListener("click", function() {
+    gtag('event', 'clic_opcion_menu_4');
+}) 
+
+//++++ Medición botones cursos ++++
+
+const boton_1_curso = document.getElementById("boton-1-curso");
+
+boton_1_curso.addEventListener("click", function() {
+
+    //++Evento sin parametro++
+    
+    // gtag('event', 'clic_mas_python');
+
+    gtag('event', 'clic_mas_python', {
+        'categoria_curso': 'analisisDeDatos',
+        'subcategoria_curso': 'BI'
+      });
+    // alert("clic boton python");
+})
 
 //********** Funciones JS*********
 
