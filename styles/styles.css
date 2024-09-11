@@ -80,7 +80,7 @@ nav {
     background-color: #ffffff;
 }
 
-h1 {
+ h1{
     color: #000000;
     font-weight: bold;
     text-align: center;
@@ -377,4 +377,35 @@ div[class^="contenedor-seccion-n1-n"] {
 
     
 
+}
+
+@media screen and (max-width: 700px) {
+
+    .parrafo-seccion1 {
+        height: 75%;
+        width: 75%;
+        font-size: 0.8rem;
+    }
+
+    .contenedor-cursos {
+        width: 90%;
+        height: 90%;
+    }
+
+    .descripcion-curso, .boton-curso {
+        font-size: .5rem;
+        padding: 7px;    
+    }
+
+    .nav-links {
+       font-size: .8rem;
+      }
+
+      .boton {
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
 }
